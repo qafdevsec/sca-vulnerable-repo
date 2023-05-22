@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.13
+    steps:
+      - checkout
+      - run:
+          name: Validate we can run it
+          command: go run main.go
+      - run:
+          name: Run Nancy
+          command: ./build.sh

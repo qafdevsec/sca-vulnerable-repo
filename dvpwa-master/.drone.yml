@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: exec
+name: SCAN
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+#Run FortiDevSec SAST Scanner, once the build step is done.
+- name: SAST
+  commands:
+  - docker pull registry.fortidevsec.forticloud.com/fdevsec_sast:latest
+  - docker run --rm --mount type=bind,source=$PWD,target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
