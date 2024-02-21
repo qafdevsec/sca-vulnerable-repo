@@ -11,7 +11,7 @@ RUN set -ex \
     && sed -i 's|xxl\.job\.executor\.logpath=.*|xxl.job.executor.logpath=/var/log/xxl-job|g' src/main/resources/application.properties \
     && mvn clean package -DskipTests
 
-FROM openjdk:8u272-jre
+FROM openjdk:8u342-jre
 
 LABEL maintainer="phithon <root@leavesongs.com>"
 
