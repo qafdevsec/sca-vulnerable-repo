@@ -9,7 +9,7 @@ WORKDIR /usr/src
 RUN cd /usr/src; \
     mvn -U clean package -Dmaven.test.skip=true
 
-FROM openjdk:8u252-jre
+FROM openjdk:8u342-jre
 
 LABEL maintainer="phithon <root@leavesongs.com>"
 
