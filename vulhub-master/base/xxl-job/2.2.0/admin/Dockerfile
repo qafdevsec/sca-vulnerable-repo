@@ -11,7 +11,7 @@ RUN set -ex \
     && sed -i 's|mysql://127\.0\.0\.1:3306|mysql://db:3306|g' src/main/resources/application.properties \
     && mvn clean package -DskipTests
 
-FROM openjdk:8u272-jre
+FROM openjdk:8u332-jre
 
 LABEL maintainer="phithon <root@leavesongs.com>"
 
