@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.12.3
 
 ENV ORACLE_HOME=/tmp/instantclient_19_6  LD_LIBRARY_PATH=/tmp/instantclient_19_6  VERSION=19.6.0.0.0 ARCH=x86_64
 
