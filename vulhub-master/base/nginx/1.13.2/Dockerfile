@@ -1,3 +1,3 @@
-FROM nginx:1.13.2
+FROM nginx:1.25.3
 
 LABEL maintainer="phithon <root@leavesongs.com>"
