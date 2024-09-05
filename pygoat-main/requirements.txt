@@ -9,6 +9,6 @@ gunicorn
 django-heroku
 whitenoise
 django-allauth
-Django==4.0.4
+Django==4.2.16
 colorama
 flake8==3.9.0
