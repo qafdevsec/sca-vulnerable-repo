@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM python:latest
 
 LABEL maintainer="python <root@leavesongs.com>"
 
