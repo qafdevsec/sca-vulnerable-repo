@@ -1,7 +1,7 @@
 wheel
 asgiref
 pytz==2020.1
-sqlparse==0.3.1
+sqlparse==0.5.4
 php-wsgi
 pyyaml==5.1
 django-crispy-forms
@@ -12,3 +12,4 @@ django-allauth
 Django==4.0.4
 colorama
 flake8==3.9.0
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
