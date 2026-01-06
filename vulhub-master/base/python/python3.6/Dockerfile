@@ -1,3 +1,3 @@
-FROM python:3.6
+FROM python:3.14.2
 
 LABEL maintainer="phithon <root@leavesongs.com>"
